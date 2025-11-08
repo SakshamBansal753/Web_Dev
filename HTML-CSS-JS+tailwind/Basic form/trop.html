@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>>
+    <title>Document</title>
+    <style>
+        body{
+            background-image: url('https://th.bing.com/th/id/OIP.h3ME_Rn921TXfiQy4SUPDgHaFg?rs=1&pid=ImgDetMain');
+            background-size: cover;
+
+        }
+        legend {
+  background-color: gray;
+  color: red;
+  padding: 5px 10px;
+}
+    #form{
+        margin: 2px;
+        padding: 100px 100px;
+        border: solid black;
+    }
+    fieldset{
+        background-color:#eeeeee;
+      
+        border: solid black;
+        width:fit-content;
+        align-items: center;
+        height: 100%;
+        
+        
+    }
+    .para{
+        max-width: 500;
+        cursor: pointer;
+        display:flex;
+        
+        
+    }
+    h1{
+        color: red;
+    }
+    .po,.s{
+    background-color: rgb(71, 239, 71);
+}
+.my{
+   
+   margin-left: auto;
+   margin-right: auto ;
+
+}
+.my,.po,.r,.s{
+    border: 1.5px solid black;
+    border-color: black;
+    font-weight: bold;
+    
+}
+    
+    </style>
+</head>
+<body>
+    <h1>
+        <center>
+       LIBRARY MANAGEMENT SYSTEM
+        </center>
+    
+    </h1>
+    <h2>
+    
+        <marquee  scrollamount="14" behavior="alternate" direction="right" bgcolor="teal"><u>HELLO THERE NEW BUDDY PLEASE REGISTER IT IS MANDATORY</u> </marquee>
+    </h2>
+    <div id="scroll">
+       <form id="form"><center>
+        <fieldset>
+            <legend>
+                REGISTER
+            </legend>
+            <p class="para">
+                Firstname<input typr="text" placeholder="Firstname"/>
+            </p class="para">
+            <p class="para">
+                Last name: <input type = "text" name = "lname"placeholder="Lastname" />
+         </p class="para">
+        
+          <p class="para">
+                <input type = "radio" name = "Gender" value = "Male"> Male
+                <input type = "radio" name = "Gender" value = "Female"> Female
+       </p class="para">
+        
+       <p class="para">
+       BOOK NAME<input type = "text" name = "ID" placeholder="BOOK NAME" />
+       </p class="para">
+        
+       <p class="para">
+     BOOK TYPE: <input type = "TEXT" name = "password" placeholder="BOOKTYPE" />
+       </p class="para">
+        
+       <p class="para">
+       Phone Number:<select name ="dropdown">
+        <option value="91" selected >91</option>
+        <option value="90" >90</option> 
+        <option value="00" >00</option>
+        <option value="599" >599</option>
+        <option value="357" >357</option>
+        <option value="70" >70</option>
+        <option value="93" >93</option>
+        <option value="1" >1</option>
+        <option value="54" >54</option>
+        <option value="374" >374</option>
+        <option value="61" >61</option>
+        <option value="55" >55</option>
+        <option value="32" >32</option>
+       </select>
+    <input type = "text" name = "phone" />
+       </p class="para">
+        <p class="para">
+            <input type="text" placeholder="ward no-xx Address">
+        </p class="para">
+        <p class="para">
+            BOOK AUTHOR<input type ="text" placeholder="AUTHOR">
+        </p>
+        <p class="para">
+            DATE<input type ="date" placeholder="AUTHOR">
+        </p>
+        <p class="para">
+            TIME<input type ="time" placeholder="AUTHOR">
+        </p>
+        <p class="para">
+            Upload image:<input type="file" accept="image/*"/>
+        </p class="para">
+        <p class="para">
+             <input type = "submit" name = "submit" value = "Submit" />
+             <input type="reset"name="reset" value="reset"/>
+           </p class="para">
+        </fieldset>
+        </center>
+       </form>
+    </div>
+    <div id="der">
+        <form >
+            <table class="my">
+                <thead id="moth">
+                    <tr>
+                      <th class="po" >Sl No.</th>
+                     
+                      <th  class="po">&nbsp;Date of issue</th>
+                      <th  class="po" >&nbsp;Reader</th>
+                      <th class="po">&nbsp;Book Name</th>
+                      <th class="po">&nbsp;type</th>
+                      <th class="po">&nbsp;time</th>
+                      <th class="po">&nbsp;</th>
+                    </tr>
+                   
+                  </thead>
+            </table>
+        </form>
+        </div>
+</body>
+</html>
