@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .birthday-text {
+            font-size: 4em;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-shadow: 0 0 10px #fff,
+                         0 0 20px #fff,
+                         0 0 30px #ff00de,
+                         0 0 40px #ff00de,
+                         0 0 50px #ff00de;
+            animation: shine 1.5s ease-in-out infinite alternate;
+            transition: transform 0.3s ease;
+        }
+
+        .birthday-text:hover {
+            animation: dance 0.5s infinite alternate;
+        }
+
+        /* Daisy styles */
+        .daisy {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            pointer-events: none;
+        }
+
+        .daisy .petal {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: white;
+            border-radius: 50%;
+            top: 35px;
+            left: 35px;
+            transform-origin: center;
+        }
+
+        /* Create 8 petals using pseudo-elements and nth-child */
+        .daisy .petal:nth-child(1) { transform: rotate(0deg) translateX(25px); }
+        .daisy .petal:nth-child(2) { transform: rotate(45deg) translateX(25px); }
+        .daisy .petal:nth-child(3) { transform: rotate(90deg) translateX(25px); }
+        .daisy .petal:nth-child(4) { transform: rotate(135deg) translateX(25px); }
+        .daisy .petal:nth-child(5) { transform: rotate(180deg) translateX(25px); }
+        .daisy .petal:nth-child(6) { transform: rotate(225deg) translateX(25px); }
+        .daisy .petal:nth-child(7) { transform: rotate(270deg) translateX(25px); }
+        .daisy .petal:nth-child(8) { transform: rotate(315deg) translateX(25px); }
+
+        .daisy .center {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: #ffeb3b;
+            border-radius: 50%;
+            top: 35px;
+            left: 35px;
+        }
+
+        .daisy {
+            animation: bloomDaisy 3s ease-out;
+        }
+
+        @keyframes shine {
+            from {
+                text-shadow: 0 0 10px #fff,
+                            0 0 20px #fff,
+                            0 0 30px #ff00de,
+                            0 0 40px #ff00de,
+                            0 0 50px #ff00de;
+            }
+            to {
+                text-shadow: 0 0 20px #fff,
+                            0 0 30px #ff4da6,
+                            0 0 40px #ff4da6,
+                            0 0 50px #ff4da6,
+                            0 0 60px #ff4da6;
+            }
+        }
+
+        @keyframes dance {
+            0% { transform: translateY(0) rotate(0deg); }
+            25% { transform: translateY(-10px) rotate(5deg); }
+            75% { transform: translateY(10px) rotate(-5deg); }
+            100% { transform: translateY(0) rotate(0deg); }
+        }
+
+        @keyframes bloomDaisy {
+            0% { 
+                transform: scale(0) rotate(0deg); 
+                opacity: 0; 
+            }
+            50% { 
+                transform: scale(1.2) rotate(45deg); 
+                opacity: 0.8; 
+            }
+            100% { 
+                transform: scale(1) rotate(0deg); 
+                opacity: 1; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-text">
+        Happy Birthday!
+    </div>
+    <script>
+        function createDaisy() {
+            const daisy = document.createElement('div');
+            daisy.className = 'daisy';
+            
+            // Create petals
+            for (let i = 0; i < 8; i++) {
+                const petal = document.createElement('div');
+                petal.className = 'petal';
+                daisy.appendChild(petal);
+            }
+            
+            // Create center
+            const center = document.createElement('div');
+            center.className = 'center';
+            daisy.appendChild(center);
+            
+            // Random position
+            daisy.style.left = Math.random() * (window.innerWidth - 100) + 'px';
+            daisy.style.top = Math.random() * (window.innerHeight - 100) + 'px';
+            
+            document.body.appendChild(daisy);
+            
+            setTimeout(() => {
+                daisy.remove();
+            }, 3000);
+        }
+
+        setInterval(createDaisy, 2000);
+    </script>
+</body>
+</html>
