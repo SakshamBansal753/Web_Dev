@@ -4,3 +4,4 @@ This complete folder is related to GSAP means GreenSocket Animation Platform THi
 https://gsap.com/
 IF you even see the website how smooth the animation are even it is difficult for AI model to do like that
 
+<img src="https://dionarodrigues.dev/_next/image?url=%2Fimages%2Fblog%2Fhow-to-create-cursor-follower-with-gsap.jpg&w=3840&q=80" width=600/>
