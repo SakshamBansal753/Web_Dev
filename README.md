@@ -16,11 +16,4 @@ CSS3 (Flexbox, Grid, Media Queries)
 
 JavaScript ES6
 
-**🙌 Acknowledgements**
-freeCodeCamp
-
-JavaScript.info
-
-MDN Web Docs
-
-Frontend Mentor
+<img src="https://t4.ftcdn.net/jpg/02/83/46/33/360_F_283463385_mfnrx6RPU3BqObhVuVjYZjeZ5pegE7xq.jpg" width=700 />
