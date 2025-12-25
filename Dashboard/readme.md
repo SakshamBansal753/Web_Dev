@@ -20,5 +20,5 @@ The dashboards are designed for data analysis, reporting, and visualization acro
 - Automated calculations and visual summaries
 
 - User-friendly layouts for quick analysis
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz8wTJ90oSAsSg_kBxl2bSyf8W3dnQjpuVww&s"/>
-<img src="https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/04/an-excel-spreadsheet-in-the-background-with-the-excel-logo-in-front.jpg?w=1600&h=900&fit=crop"/>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTz8wTJ90oSAsSg_kBxl2bSyf8W3dnQjpuVww&s"/><img src="[https://static0.howtogeekimages.com/wordpress/wp-content/uploads/2024/04/an-excel-spreadsheet-in-the-background-with-the-excel-logo-in-front.jpg?w=1600&h=900&fit=crop](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqx6msNTIaaq6FO7BDO9GjZd9oAJuOElWcjg&s)"/>
+
