@@ -1,7 +1,7 @@
 # WEB DEVELOPMENT 🕸️
 
 **📚 Learning Goals**
-💡 Master frontend structure and styling
+💡 Master frontend structure and styling and GUI
 
 🧠 Understand JS basics like events, DOM manipulation, and logic
 
